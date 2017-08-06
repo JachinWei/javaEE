@@ -1,0 +1,17 @@
+工具：Myeclipse 和 tomcat 
+第一步：
+使用servlet需要用到tomcat中的类包，所以先导入类包：servlet-api.jar
+
+第二步：
+创建web目录如下所示
+- web
+- WEB-INF 这是jsp环境的规定的用来存储服务端配置文件信息和在服务端运行的类文件的，不允许客户端直接访问
+- classes 用来存放类文件
+web.xml  用来初始化配置信息
+
+第三步
+添加项目到tomcat中
+方法一：直接时候用myeclipse添加项目到tomcat中
+方法二：在tomcat的conf文件夹中的servlet.xml中加入
+<Host appBase="webapps" autoDeploy="true" name="localhost" unpackWARs="true"> 原有的
+ <Context debug="0" docBase="E:\\myeclipse\\jsDemo\\WebRoot" path="/jsDemo" reloadable="false"/> 新增的，文件路径，默认根目录名，是否重新加载类
