@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="dangdemo"
+  id="myeclipse.1321718110265"
+  context-root="/dangdemo"
+  j2ee-spec="5.0"
+  archive="dangdemo.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="entity">
+	<class name="Category" table="d_d_category">
+		<id name="id">
+			<generator class="increment"></generator>
+		</id>
+		<property name="turn" />
+		<property name="en_name" />
+		<property name="cn_name" />
+		<property name="parent_id" />
+		<property name="category_value" />
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,43 @@
+数据库表
+		d_d_product
+				  id
+				  category_id	--分类id
+				  product_name --产品名称
+				  description --产品描述
+				  add_time  --产品添加时间
+				  fixed_price --原价
+				  dang_price --当当网折扣价
+				  keywords --关键字
+				  has_deleted --此物品是否已经被删除
+				  product_pic --图片
+		
+		d_d_book
+				  id
+				  author --作者
+				  publishing --出版社
+				  publish_time --出版时间
+				  word_number --字数
+				  which_edtion --版本号
+				  total_page --页数
+				  print_time --印刷次数
+				  isbn --版号
+				  author_summary --作者描述
+				  catalogue --图书描述
+				  
+		d_d_category 分类
+				  id
+				  turn --排序字段
+				  en_name --英文名
+				  cn_name --中文名
+				  parent_id --父分类id
+				  category_value --分类编码
+		
+		d_d_user
+				  id 
+				  email --登录的用户名
+				  nickname --昵称
+				  password 
+				  is_email_verify --email是否经过验证
+				  email_verify_code --发到邮箱的验证码
+				  last_login_time --最近登录时间
+				  last_login_ip --最近登录ip

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- 指定需要struts2处理请求后缀，该属性默认值是action,即所有请求*.action由struts2处理。如用户需要指定多个后缀，则后缀之间用英文逗号隔开 -->
+	
+	<!-- 设置post中文乱码 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="bookList" class="web.action.BookListAction" method="getList">
+			<result name="success">/main/book_list.jsp</result>
+		</action>
+		<action name="mainList" class="web.action.MainListAction" method="getList">
+			<result name="success">/main/main.jsp</result>
+			<result name="failure">/tip/main_fail.jsp</result>
+		</action>
+	</package>
+	<package name="login" namespace="/login" extends="struts-default">
+		<action name="saveProduct" class="web.action.ProductSaleAction" method="saveItem">
+			<result name="success">/main/book_list.jsp</result>
+			<result name="failure">/tip/buy_fail.jsp</result>
+		</action>
+	</package>
+	
+</struts>
