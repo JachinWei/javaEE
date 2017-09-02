@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="ddweb" extends="struts-default">
+
+
+<action name="register-form" class="action.UserAction"
+    		method="register">
+    		<result name="success">verify_form.jsp</result>
+    		<result name="fail">in.jsp</result>	
+    	</action>
+    	
+    <action name="verify_form" class="action.UserAction"
+    		method="checkEm">
+    		<result name="success">be.jsp</result>
+    		<result name="fail">in.jsp</result>	
+   </action>	
+    	
+    	
+    <action name="login" class="action.UserAction"
+    		method="loginUser">
+    		<result name="success">be.jsp</result>
+    		<result name="fail">in.jsp</result>	
+    	</action>	
+    	
+</package>
+</struts>    

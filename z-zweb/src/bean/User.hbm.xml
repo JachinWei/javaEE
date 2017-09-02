@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="bean">
+
+    <class name="bean.User" table="d_d_user">
+    
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        
+        <property name="email" type="string" column="email">
+        </property>
+        
+        <property name="nickname" type="java.lang.String" >
+            <column name="nickname" />
+        </property>
+        
+        <property name="password" type="java.lang.String">
+            <column name="password" />
+        </property>
+       
+      <!--  <property name="lastLoginTime" type="java.lang.Integer">
+            <column name="last_login_time" />
+        </property>
+        
+        <property name="lastLoginIp" type="java.lang.String">
+            <column name="last_login_ip" />
+        </property>
+        <property name="isEmailVerify" type="java.lang.Integer">
+            <column name="is_email_verify" />
+        </property> -->
+        
+    </class>
+    
+</hibernate-mapping>
