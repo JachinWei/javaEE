@@ -1,0 +1,51 @@
+h2 {
+    text-align: center;
+}
+
+.input-group-addon{
+    width: 70px;
+}
+        
+.row{
+	vertical-align: middle;
+	text-align:center;
+}
+
+.input-form {
+    margin: auto;
+}
+
+.input-form-left {
+    margin: auto;
+    text-align:left;
+}
+
+.float-left{
+	float:left;
+}
+
+.input-group{
+    margin: auto;
+}
+
+ .text-size{
+    width: 400x;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}        
+       
+.btn-change {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    float:right;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.login-text-size {
+	width: 250px;
+}  
